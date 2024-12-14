@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- !!!!!!!!!! 아래 한줄을 수정하시오 !!!!!!!!!! -->
-    <title>작품제목 - 성이름</title>
+    <title>Flow with your creativity! - 임호정</title>
     <!-- !!!!!!!!!! 위 한줄을 수정하시오 !!!!!!!!!! -->
     <link
       rel="stylesheet"
@@ -17,6 +17,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
     <!-- !!!!!!!!!! 필요에 따라 아래를 수정하시오 !!!!!!!!!! -->
     <script src="./sketch/main.js" defer></script>
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@1/dist/ml5.js"></script>
     <!-- !!!!!!!!!! 필요에 따라 위를 수정하시오 !!!!!!!!!! -->
   </head>
   <body>
@@ -30,39 +33,27 @@
       </div>
       <div class="container">
         <!-- !!!!!!!!!! 아래 한줄을 수정하시오 !!!!!!!!!! -->
-        <h1 class="title">작품제목</h1>
+        <h1 class="title">Flow with your creativity!</h1>
         <!-- !!!!!!!!!! 위 한줄을 수정하시오 !!!!!!!!!! -->
         <div class="info">
           <!-- !!!!!!!!!! 아래 한줄을 수정하시오 !!!!!!!!!! -->
-          <div class="info__artist">성이름</div>
+          <div class="info__artist">임호정</div>
           <!-- !!!!!!!!!! 위 한줄을 수정하시오 !!!!!!!!!! -->
           <div class="info__year">2024</div>
         </div>
         <div class="content">
           <!-- !!!!!!!!!! 필요에 따라 아래를 수정하시오 !!!!!!!!!! -->
           <p>
-            법원은 최고법원인 대법원과 각급법원으로 조직된다. 법관은 탄핵 또는
-            금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니하며,
-            징계처분에 의하지 아니하고는 정직·감봉 기타 불리한 처분을 받지
-            아니한다. 국회의원이 회기전에 체포 또는 구금된 때에는 현행범인이
-            아닌 한 국회의 요구가 있으면 회기중 석방된다.
+            이 작품은 사용자의 검지손가락 움직임을 사용하여 창의력을 시각화 하는
+            작품입니다. 손가락의 움직임이 선으로 이어지며, 화면 위에 그려지는
+            모든 흔적은 사용자의 즉흥적인 표현과 연결됩니다.
           </p>
           <p>
-            정당은 법률이 정하는 바에 의하여 국가의 보호를 받으며, 국가는 법률이
-            정하는 바에 의하여 정당운영에 필요한 자금을 보조할 수 있다. 모든
-            국민의 재산권은 보장된다. 그 내용과 한계는 법률로 정한다. 대통령으로
-            선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일 현재 40세에
-            달하여야 한다.
-          </p>
-          <p>
-            평화통일정책의 수립에 관한 대통령의 자문에 응하기 위하여
-            민주평화통일자문회의를 둘 수 있다. 위원은 탄핵 또는 금고 이상의 형의
-            선고에 의하지 아니하고는 파면되지 아니한다. 대한민국은 통일을
-            지향하며, 자유민주적 기본질서에 입각한 평화적 통일 정책을 수립하고
-            이를 추진한다. 이 헌법은 1988년 2월 25일부터 시행한다. 다만, 이
-            헌법을 시행하기 위하여 필요한 법률의 제정·개정과 이 헌법에 의한
-            대통령 및 국회의원의 선거 기타 이 헌법시행에 관한 준비는 이 헌법시행
-            전에 할 수 있다.
+            웹캠과 ml5.js의 손 추적 기술을 활용하여, 사용자는 단지 손가락만으로
+            자신의 상상력을 캔버스에 펼칠 수 있습니다. 다양한 색상 버튼을 통해
+            감정을 표현할 수 있으며, 필요할 때는 'Remove' 버튼으로 새로운 시작을
+            만들어낼 수도 있습니다. 이 작품은 손의 움직임이라는 가장 자연스러운
+            행위로 창작 과정의 즐거움을 느낄 수 있습니다.
           </p>
           <!-- !!!!!!!!!! 필요에 따라 위를 수정하시오 !!!!!!!!!! -->
         </div>
@@ -72,37 +63,43 @@
         <ol class="references">
           <!-- !!!!!!!!!! 필요에 따라 아래를 수정하시오 !!!!!!!!!! -->
           <li>
-            [작가이름], [작가성]. <span>작품제목.</span> [플랫폼이름],
-            [공개년도]. 최종접근일 2024.12.09.
-            <a href="" target="_blank">URL</a>
-          </li>
-          <li>
-            Chen, Zaron. <span>Hilbert.</span> p5.js, 2024. 최종접근일
-            2024.12.09.
-            <a href="https://p5js.org/sketches/2174234/" target="_blank"
-              >https://p5js.org/sketches/2174234/</a
+            Patt, Vira. <span>Fridge Magnets.</span> youtube, 2024. 최종접근일
+            2024.12.08.
+            <a
+              href="https://www.youtube.com/watch?v=72pAzuD8tqE&t=655s"
+              target="_blank"
+            >
+              https://www.youtube.com/watch?v=72pAzuD8tqE&t=655s</a
             >
           </li>
           <li>
-            [작가아이디]. <span>작품제목.</span> [플랫폼이름], [공개년도].
-            최종접근일 2024.12.09.
-            <a href="" target="_blank">URL</a>
+            Daniel, Shiffman.
+            <span>Hand Pose Detection with ml5.js.</span> youtube, 2024.
+            최종접근일 2024.12.08.
+            <a
+              href="https://www.youtube.com/watch?v=vfNHdVbE-l4"
+              target="_blank"
+              >https://www.youtube.com/watch?v=vfNHdVbE-l4</a
+            >
+          </li>
+
+          <li>
+            Daniel, Shiffman. <span>HandPose Painting - color.</span> p5.js,
+            2024. 최종접근일 2024.12.08.
+            <a
+              href="https://editor.p5js.org/codingtrain/sketches/InzaVXI-R"
+              target="_blank"
+              >https://editor.p5js.org/codingtrain/sketches/InzaVXI-R</a
+            >
           </li>
           <li>
-            newyellow. <span>Generative Succulents.</span> p5.js, 2023.
-            최종접근일 2024.12.09.
-            <a href="" target="_blank">https://p5js.org/sketches/1957050/</a>
-          </li>
-          <li>
-            [게시자이름], [게시자성]. <span>기사제목.</span> [플랫폼이름],
-            [발행일]. 최종접근일 2024.12.09
-            <a href="" target="_blank">URL</a>
-          </li>
-          <li>
-            <span>The Superb Generative Gradient Art by Martin Naumann.</span>
-            Design You Trust. 최종접근일 2024.12.09
-            <a href="" target="_blank"
-              >https://designyoutrust.com/2024/08/the-superb-generative-gradient-art-by-martin-naumann/</a
+            Daniel, Shiffman.
+            <span>HandPose - keypoints.</span> p5.js, 2024. 최종접근일
+            2024.12.08.
+            <a
+              href="https://editor.p5js.org/codingtrain/sketches/o5wnL6esQ"
+              target="_blank"
+              >https://editor.p5js.org/codingtrain/sketches/o5wnL6esQ</a
             >
           </li>
           <!-- !!!!!!!!!! 필요에 따라 위를 수정하시오 !!!!!!!!!! -->
