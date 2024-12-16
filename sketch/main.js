@@ -52,8 +52,9 @@ function setup() {
   removeButton.mousePressed(clearDrawing);
 
   createColorButton('GREEN', '#33FF00', 100, 20);
-  createColorButton('BLUE', '#0033FF', 180, 20);
-  createColorButton('PINK', '#FF0099', 250, 20);
+  createColorButton('BLUE', '#0033FF', 177, 20);
+  createColorButton('PINK', '#FF0099', 242, 20);
+  createColorButton('BLACK', '#000000', 303, 20);
 }
 
 // windowResized()에서 setup()에 준하는 구문을 실행해야할 경우를 대비해 init이라는 명칭의 함수를 만들어 둠.
